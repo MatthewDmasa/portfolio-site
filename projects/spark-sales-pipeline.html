@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PySpark E-Commerce Sales Data Pipeline | Matthew Delamasa</title>
+  <meta
+    name="description"
+    content="A PySpark data pipeline project for ingesting, cleaning, transforming, and analyzing e-commerce sales data."
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">MD</a>
+
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#categories">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <div class="container">
+        <p class="eyebrow">Data Pipeline • PySpark • Data Engineering</p>
+        <h1>PySpark E-Commerce Sales Data Pipeline</h1>
+        <p class="project-hero-text">
+          A beginner-to-intermediate Spark pipeline built to ingest raw e-commerce
+          sales data, clean and transform it, generate business insights, and export
+          processed outputs for analysis.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/MatthewDmasa/spark-sales-pipeline" target="_blank" class="btn btn-primary">View GitHub</a>
+          <a href="../index.html#categories" class="btn btn-secondary">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Overview</p>
+          <h2>Project Summary</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>What it does</h3>
+            <p>
+              This pipeline loads raw CSV sales data into Spark, performs cleaning and
+              validation, creates transformed fields such as revenue and date-based
+              features, generates business insights, and exports the final outputs.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Why I built it</h3>
+            <p>
+              I wanted a project that demonstrated Spark-style data handling and
+              transformation logic while still being approachable and easy to explain
+              in a portfolio or interview setting.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Core stack</h3>
+            <p>
+              Python, PySpark, pandas, and Apache Spark running in local mode.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Project Media</p>
+          <h2>Pipeline screenshots and outputs</h2>
+        </div>
+
+        <div class="media-grid">
+          <article class="media-card media-card-large">
+            <h3>Pipeline Run Output</h3>
+            <img
+              src="../assets/images/spark-pipeline-run.png"
+              alt="Terminal output showing the PySpark sales pipeline running successfully"
+            />
+            <p class="media-caption">
+              Terminal output showing the Spark pipeline run,
+              including ingestion, transformation, and export steps.
+            </p>
+          </article>
+
+          <article class="media-card">
+            <h3>Folder Structure</h3>
+            <img
+              src="../assets/images/spark-folder-structure.png"
+              alt="Repository folder structure for the PySpark sales pipeline project"
+            />
+            <p class="media-caption">
+              VS Code project structure showing data, output,
+              src, and supporting files.
+            </p>
+          </article>
+
+          <article class="media-card media-card-large">
+            <h3>Aggregated Insight Output</h3>
+            <img
+              src="../assets/images/spark-aggregated-output.png"
+              alt="Aggregated business insight output from the PySpark sales pipeline"
+            />
+            <p class="media-caption">
+              Project outputs displaying aggrgated sales data.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Implementation</p>
+          <h2>How the pipeline was structured</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Data ingestion</h3>
+            <p>
+              The workflow begins by loading raw CSV data into a Spark DataFrame, with
+              schema inference and initial structure validation.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Cleaning</h3>
+            <p>
+              The pipeline removes duplicates, drops rows with missing critical values,
+              filters invalid numeric fields, and converts date columns into usable formats.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Transformation</h3>
+            <p>
+              Derived fields are created to support analysis, including revenue
+              calculations and extracted year and month values from order dates.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Aggregation and export</h3>
+            <p>
+              The project generates higher-level insights such as top products by
+              revenue, regional sales summaries, and monthly revenue trends, then
+              exports cleaned and aggregated outputs to CSV.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-results">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Results</p>
+          <h2>What this project demonstrates</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Spark workflow familiarity</h3>
+            <p>
+              Loading data into Spark, applying transformations, and producing useful
+              outputs in a structured pipeline.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Business-oriented analysis</h3>
+            <p>
+              Turning raw transaction data into clearer summaries such as revenue by
+              product, region, and month.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Portfolio value</h3>
+            <p>
+              This project shows practical data engineering structure while staying
+              readable enough for interviews and recruiter review.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-challenges">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Notes</p>
+          <h2>Project scope and considerations</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Current scope</h3>
+            <ul>
+              <li>Runs in local Spark mode rather than a distributed production environment</li>
+              <li>Designed as a portfolio project with clear educational structure</li>
+              <li>Uses pandas as a fallback for output compatibility on Windows</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Possible future improvements</h3>
+            <ul>
+              <li>Add more advanced Spark transformations or joins</li>
+              <li>Integrate larger datasets to better reflect scale</li>
+              <li>Connect pipeline outputs to dashboards or reporting views</li>
+              <li>Extend validation and error handling for broader data quality coverage</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Let’s connect</h2>
+        <p>
+          Add your GitHub, LinkedIn, and email details here.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MatthewDmasa?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/matthew-delamasa/">LinkedIn</a>
+        <a href="mailto:matthew.delamasa@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

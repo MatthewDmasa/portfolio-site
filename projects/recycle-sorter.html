@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recyclable Material Sorting | Matthew Delamasa</title>
+  <meta
+    name="description"
+    content="A modular computer vision project using YOLO and Streamlit for recyclable material detection and sorting."
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">MD</a>
+
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#categories">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <div class="container">
+        <p class="eyebrow">Fully Deployed • Computer Vision • Streamlit</p>
+        <h1>Recyclable Material Sorting with YOLO and Streamlit</h1>
+        <p class="project-hero-text">
+          A modular computer vision application built to detect recyclable waste items
+          and map them into practical sorting categories using a custom-trained
+          Ultralytics YOLO model and a Streamlit frontend.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/MatthewDmasa/recycle-sorter-yolo" class="btn btn-primary">View GitHub</a>
+          <a href="https://appapppy-fizakawds68gotgxkfjjnj.streamlit.app/" class="btn btn-secondary">Live Demo</a>
+          <a href="../index.html#categories" class="btn btn-secondary">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Overview</p>
+          <h2>Project Summary</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>What it does</h3>
+            <p>
+              This application detects recyclable materials from uploaded images,
+              uploaded demo videos, and live webcam input. It then returns predicted
+              classes, confidence scores, annotated visual output, and a simplified
+              sorting recommendation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Why I built it</h3>
+            <p>
+              I wanted to create a portfolio-ready computer vision project that
+              combined model training, dataset preparation, inference logic, and a
+              user-facing interface in a way that felt practical and easy to demo.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Core stack</h3>
+            <p>
+              Python, Ultralytics YOLO, Streamlit, OpenCV, Pillow, and
+              streamlit-webrtc.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Project Media</p>
+          <h2>Detection outputs</h2>
+        </div>
+
+        <div class="media-grid">
+          <article class="media-card media-card-large">
+            <h3>Image Upload Detection</h3>
+            <img
+              src="../assets/images/recycle-image-upload-output.png"
+              alt="Annotated recyclable material detection result from image upload mode"
+            />
+          </article>
+
+          <article class="media-card">
+            <h3>Annotated Output Video</h3>
+            <video controls muted playsinline>
+              <source src="../assets/videos/recycle-annotated-output.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article class="media-card">
+            <h3>Live Annotation Video</h3>
+            <video controls muted playsinline>
+              <source src="../assets/videos/recycle-live-annotation.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Implementation</p>
+          <h2>How the project was structured</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Dataset strategy</h3>
+            <p>
+              The model was trained on a grouped version of the WaRP-D dataset. Rather
+              than keeping all fine-grained labels, the data was remapped into broader
+              recyclable categories to make the application more practical for sorting use.
+            </p>
+            <ul>
+              <li>plastic</li>
+              <li>detergent</li>
+              <li>can</li>
+              <li>cardboard</li>
+              <li>glass</li>
+              <li>canister</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Model selection</h3>
+            <p>
+              Two YOLO pipelines were tested before selecting the final deployment model.
+              The final choice was a YOLOv8m-based model because it produced the best
+              overall balance across validation metrics and improved weaker categories
+              such as can and canister.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Application modes</h3>
+            <p>
+              The interface was designed around multiple input modes to make the demo
+              more flexible and realistic.
+            </p>
+            <ul>
+              <li>Image upload</li>
+              <li>Demo video upload</li>
+              <li>Live webcam detection</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Sorting logic</h3>
+            <p>
+              Detection outputs were mapped into broader sorting recommendations to make
+              the results more understandable for users. For example, plastic and
+              detergent items can both be mapped into plastic recycling guidance, while
+              cans map into metal recycling.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-results">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Results</p>
+          <h2>What this project demonstrates</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Machine learning workflow</h3>
+            <p>
+              Dataset preprocessing, grouped label design, YOLO training, validation
+              comparison, and final model selection.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Application integration</h3>
+            <p>
+              Connecting a trained vision model to a frontend interface for interactive
+              testing and visual feedback.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Portfolio value</h3>
+            <p>
+              This project shows modular structure, deployment thinking, model trade-off
+              awareness, and the ability to turn technical work into a usable demo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-challenges">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Challenges</p>
+          <h2>Key limitations and future improvements</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Current limitations</h3>
+            <ul>
+              <li>Performance is weaker on tightly cropped objects</li>
+              <li>Results depend on similarity to the training distribution</li>
+              <li>Webcam performance varies by device speed and frame size</li>
+              <li>Sorting recommendations are simplified for demo use</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Future improvements</h3>
+            <ul>
+              <li>Add tracked object IDs for video streams</li>
+              <li>Improve result cards and summaries in the interface</li>
+              <li>Expand class coverage or evaluate more datasets</li>
+              <li>Optimize webcam inference for lower latency</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Let’s connect</h2>
+        <p>
+          Add your GitHub repo link, live deployment link, and LinkedIn profile here.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MatthewDmasa?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/matthew-delamasa/">LinkedIn</a>
+        <a href="mailto:matthew.delamasa@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

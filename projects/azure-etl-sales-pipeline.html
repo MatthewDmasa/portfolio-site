@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure ETL Sales Pipeline | Matthew Delamasa</title>
+  <meta
+    name="description"
+    content="A Python and Pandas ETL project structured around Azure-inspired raw and processed data layers."
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">MD</a>
+
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#categories">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <div class="container">
+        <p class="eyebrow">Data Pipeline • Python • ETL</p>
+        <h1>Azure ETL Sales Pipeline</h1>
+        <p class="project-hero-text">
+          A Python ETL project that simulates an Azure-inspired data engineering workflow,
+          extracting raw sales data, transforming it into a cleaner structured format,
+          and loading the results into both a processed CSV and a SQLite database.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/MatthewDmasa/azure-etl-sales-pipeline" target="_blank" class="btn btn-primary">View GitHub</a>
+          <a href="../index.html#categories" class="btn btn-secondary">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Overview</p>
+          <h2>Project Summary</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>What it does</h3>
+            <p>
+              This pipeline extracts raw sales records from CSV, cleans and standardizes
+              the data, creates derived fields, and loads the processed outputs into
+              both flat-file and database formats.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Why I built it</h3>
+            <p>
+              I wanted a portfolio project that showed structured ETL thinking, modular
+              scripting, and familiarity with data engineering concepts in a way that
+              was easy to explain and easy to run locally.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Core stack</h3>
+            <p>
+              Python, pandas, sqlite3, and logging, with folder organization inspired
+              by Azure-style raw and processed data layers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Project Media</p>
+          <h2>Pipeline screenshots and outputs</h2>
+        </div>
+
+        <div class="media-grid">
+          <article class="media-card media-card-large">
+            <h3>Pipeline Run Output</h3>
+            <img
+              src="../assets/images/azure-pipeline-run.png"
+              alt="Terminal output showing the Azure ETL sales pipeline running successfully"
+            />
+            <p class="media-caption">
+              Terminal output showing the pipeline execution from
+              start to finish, including extraction, transformation, and load steps.
+            </p>
+          </article>
+
+          <article class="media-card">
+            <h3>Folder Structure</h3>
+            <img
+              src="../assets/images/azure-folder-structure.png"
+              alt="Repository folder structure for the Azure ETL sales pipeline project"
+            />
+            <p class="media-caption">
+              VS Code project structure showing raw_data,
+              processed_data, scripts, main.py, and supporting files.
+            </p>
+          </article>
+
+          <article class="media-card">
+            <h3>Processed CSV Output</h3>
+            <img
+              src="../assets/images/azure-processed-csv.png"
+              alt="Processed sales CSV output from the ETL pipeline"
+            />
+            <p class="media-caption">
+              The cleaned CSV opened in a spreadsheet or editor
+              to show the transformed output clearly.
+            </p>
+          </article>
+
+          <article class="media-card media-card-large">
+            <h3>SQLite Output or Validation Check</h3>
+            <img
+              src="../assets/images/azure-sqlite-output.png"
+              alt="SQLite database output or validation results from the ETL pipeline"
+            />
+            <p class="media-caption">
+              SQLite table preview, database browser output,
+              or your validation/check script confirming the loaded results.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Implementation</p>
+          <h2>How the pipeline was structured</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Extract</h3>
+            <p>
+              Raw sales data is read from a source CSV file stored in a dedicated raw
+              data layer, mirroring a simplified ingestion stage in a data pipeline.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Transform</h3>
+            <p>
+              The transformation stage cleans missing values, standardizes formatting,
+              and creates derived fields so the data is more reliable and usable
+              downstream.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Load</h3>
+            <p>
+              The cleaned data is written into a processed CSV for flat-file use and
+              also loaded into SQLite to demonstrate structured storage beyond a single file.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Azure-inspired design</h3>
+            <p>
+              The folder organization reflects a simplified Azure-style workflow, with
+              raw and processed layers, modular ETL scripts, a main orchestration file,
+              and logging used to simulate monitoring.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-results">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Results</p>
+          <h2>What this project demonstrates</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>ETL workflow design</h3>
+            <p>
+              A clear extract-transform-load flow with separated responsibilities and
+              modular code organization.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Practical data handling</h3>
+            <p>
+              Cleaning, formatting, derived field creation, and output validation in a
+              portfolio-friendly data engineering project.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Interview value</h3>
+            <p>
+              This project is easy to talk through because it shows both data movement
+              and design structure, not just a single script.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-challenges">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Notes</p>
+          <h2>Project scope and next steps</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Current scope</h3>
+            <ul>
+              <li>Local ETL simulation rather than a cloud-deployed Azure pipeline</li>
+              <li>Focused on clarity and structure over production complexity</li>
+              <li>Uses SQLite to demonstrate loading into a database layer</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Possible future improvements</h3>
+            <ul>
+              <li>Add scheduling or orchestration tooling</li>
+              <li>Expand validation and data quality checks</li>
+              <li>Connect the workflow to a cloud storage or warehouse environment</li>
+              <li>Add simple dashboarding on top of processed outputs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Let’s connect</h2>
+        <p>
+          Add your GitHub, LinkedIn, and email details here.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MatthewDmasa?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/matthew-delamasa/">LinkedIn</a>
+        <a href="mailto:matthew.delamasa@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

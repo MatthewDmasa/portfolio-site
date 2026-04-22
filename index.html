@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Delamasa | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio website for Matt Delamasa featuring AI, software, and data projects."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">MD</a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#categories">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">AI • Software • Data</p>
+
+        <h1>
+          Building clean, practical projects in
+          <span>machine learning, software, and data systems.</span>
+        </h1>
+
+        <p class="hero-text">
+          I’m Matthew Delamasa, an AI software engineering graduate building portfolio
+          projects focused on machine learning, application development, and data workflows.
+          This site highlights deployed apps, technical experiments, and pipeline-based projects.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#categories" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>A portfolio designed to grow with my projects</h2>
+        </div>
+
+        <div class="about-card">
+          <p>
+            This site is built to be clean, readable, and project-focused. Each category
+            below represents a different type of work I’ve been developing, from model
+            comparisons and computer vision applications to data engineering pipelines.
+            Over time, each project will link to its own detailed page with screenshots,
+            technical notes, repository links, and deployment details.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Project Categories</h2>
+        </div>
+
+        <div class="category-stack">
+          <article class="category-panel">
+            <div class="category-panel-header">
+              <p class="card-tag">01</p>
+              <h3>Experimental</h3>
+            </div>
+            <p class="category-description">
+              Exploratory projects focused on model behavior, comparisons, and technical analysis.
+            </p>
+
+            <div class="project-list">
+              <article class="project-item">
+                <h4>Logistic Regression vs Random Forest</h4>
+                <p>
+                  A notebook-based machine learning comparison across two classification datasets,
+                  focused on preprocessing, interpretability, and why model performance changes
+                  between structured and messier data.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/MatthewDmasa/ml-model-comparison">GitHub</a>
+                  <a href="projects\ml-model-comparison.html">Project Page</a>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="category-panel">
+            <div class="category-panel-header">
+              <p class="card-tag">02</p>
+              <h3>Fully Deployed</h3>
+            </div>
+            <p class="category-description">
+              End-to-end applications with a working interface, deployment flow, and practical use case.
+            </p>
+
+            <div class="project-list">
+              <article class="project-item">
+                <h4>Recyclable Material Sorting with YOLO and Streamlit</h4>
+                <p>
+                  A modular computer vision app using a custom-trained YOLO model and Streamlit
+                  frontend for image upload, video upload, and live webcam recyclable waste detection.
+                  For the best experience, please go to the GitHub repo, and download the demo image and video
+                  to use the app.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/MatthewDmasa/recycle-sorter-yolo">GitHub</a>
+                  <a href="https://recyclesorter.streamlit.app/">Live Demo</a>
+                  <a href="projects\recycle-sorter.html">Project Page</a>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="category-panel">
+            <div class="category-panel-header">
+              <p class="card-tag">03</p>
+              <h3>Data Pipeline</h3>
+            </div>
+            <p class="category-description">
+              Projects centered on ETL logic, transformation workflows, and turning raw data into usable outputs.
+            </p>
+
+            <div class="project-list">
+              <article class="project-item">
+                <h4>PySpark E-Commerce Sales Data Pipeline</h4>
+                <p>
+                  A Spark-based pipeline that ingests raw e-commerce sales data, cleans and transforms it,
+                  generates business insights, and exports processed outputs.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/MatthewDmasa/spark-sales-pipeline" target="_blank">GitHub</a>
+                  <a href="projects/spark-sales-pipeline.html">Project Page</a>
+                </div>
+              </article>
+
+              <article class="project-item">
+                <h4>Azure ETL Sales Pipeline</h4>
+                <p>
+                  A Python and Pandas ETL project structured around Azure-inspired raw and processed
+                  data layers, with cleaned CSV and SQLite outputs.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/MatthewDmasa/azure-etl-sales-pipeline" target="_blank">GitHub</a>
+                  <a href="projects/azure-etl-sales-pipeline.html">Project Page</a>
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Current Focus</p>
+          <h2>Building out dedicated project pages</h2>
+        </div>
+
+        <div class="featured-card">
+          <h3>Next step: turning each README into a portfolio case study</h3>
+          <p>
+            The homepage now acts as a clean project hub. From here, each project can be expanded
+            into its own page with screenshots, technical breakdowns, tools used, challenges,
+            and implementation details.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Let’s connect</h2>
+        <p>
+          GitHub, LinkedIn, and direct project links can be added here as the portfolio is completed.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MatthewDmasa?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/matthew-delamasa/">LinkedIn</a>
+        <a href="mailto:matthew.delamasa@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

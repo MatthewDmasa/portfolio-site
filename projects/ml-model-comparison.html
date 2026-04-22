@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logistic Regression vs Random Forest | Matthew Delamasa</title>
+  <meta
+    name="description"
+    content="A machine learning comparison project analyzing Logistic Regression and Random Forest across two classification datasets."
+  />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">MD</a>
+
+      <nav class="nav-links">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#categories">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <div class="container">
+        <p class="eyebrow">Experimental • Machine Learning • Scikit-learn</p>
+        <h1>Logistic Regression vs Random Forest on Two Classification Tasks</h1>
+        <p class="project-hero-text">
+          A notebook-based machine learning project comparing two common classifiers
+          across two binary classification datasets, with emphasis on preprocessing,
+          model behavior, and why performance changes depending on data structure.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/MatthewDmasa/ml-model-comparison" class="btn btn-primary">View GitHub</a>
+          <a href="https://github.com/MatthewDmasa/ml-model-comparison/blob/main/model_comparison_analysis.ipynb" class="btn btn-secondary">Open Notebook</a>
+          <a href="../index.html#categories" class="btn btn-secondary">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-overview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Overview</p>
+          <h2>Project Summary</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>What it does</h3>
+            <p>
+              This project compares Logistic Regression and Random Forest on two binary
+              classification tasks with different characteristics, then explains why
+              performance changes across datasets rather than just reporting scores.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Why I built it</h3>
+            <p>
+              I wanted to create a machine learning project that focused on reasoning,
+              preprocessing, and model selection rather than only treating evaluation
+              as a leaderboard exercise.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Core stack</h3>
+            <p>
+              Python, scikit-learn, pandas, NumPy, matplotlib, and Jupyter Notebook.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-media">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Project Media</p>
+          <h2>Notebook screenshots and outputs</h2>
+        </div>
+
+        <div class="media-grid">
+          <article class="media-card media-card-large">
+            <h3>Model Comparison Results</h3>
+            <img
+              src="../assets/images/ml-results-summary.png"
+              alt="Model comparison results table showing Logistic Regression and Random Forest performance"
+            />
+            <p class="media-caption">
+              Notebook output comparing accuracy,
+              precision, recall, and F1-score across both datasets.
+            </p>
+          </article>
+
+          <article class="media-card">
+            <h3>Confusion Matrix 1</h3>
+            <img
+              src="../assets/images/ml-confusion-matrix1.png"
+              alt="Confusion matrix or model evaluation visualization"
+            />
+            <p class="media-caption">
+              Confusion matrices for Breast Cancer Wisonsin dataset.
+            </p>
+          </article>
+
+          <article class="media-card">
+            <h3>Confusion Matrix 2</h3>
+            <img
+              src="../assets/images/ml-confusion-matrix2.png"
+              alt="Confusion matrix or model evaluation visualization"
+            />
+            <p class="media-caption">
+              Confusion matrices for Titanic dataset.
+            </p>
+          </article>
+
+
+
+          <article class="media-card">
+            <h3>Preprocessing / Pipeline Section</h3>
+            <img
+              src="../assets/images/ml-preprocessing-pipeline.png"
+              alt="Notebook preprocessing pipeline screenshot"
+            />
+            <p class="media-caption">
+              Notebook section showing imputation,
+              encoding, scaling, or the scikit-learn pipeline structure.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Implementation</p>
+          <h2>How the comparison was structured</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Datasets used</h3>
+            <p>
+              The project compares model behavior across two different binary classification
+              datasets: Breast Cancer Wisconsin and Titanic. One is smaller, cleaner,
+              and fully numerical, while the other is messier and includes mixed data types
+              with missing values.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Models compared</h3>
+            <p>
+              Logistic Regression was used as a strong baseline model, while Random Forest
+              was included as a more flexible tree-based ensemble capable of capturing
+              non-linear interactions.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Preprocessing pipeline</h3>
+            <p>
+              The notebook applies a structured preprocessing workflow including
+              numerical imputation, categorical imputation, one-hot encoding,
+              feature scaling, and a stratified train/test split to keep the
+              comparison reproducible and fair.
+            </p>
+          </article>
+
+          <article class="detail-card">
+            <h3>Evaluation focus</h3>
+            <p>
+              Instead of relying only on accuracy, the comparison also includes
+              precision, recall, F1-score, and confusion matrices to better explain
+              model behavior.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-results">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Results</p>
+          <h2>What this project demonstrates</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Model selection thinking</h3>
+            <p>
+              More flexible models are not automatically better. This project shows how
+              dataset structure and problem scale can make a simpler model perform better.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Preprocessing awareness</h3>
+            <p>
+              The comparison highlights how careful preprocessing supports fair evaluation
+              and helps explain why results differ across datasets.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Interview-friendly analysis</h3>
+            <p>
+              This project is designed to be easy to discuss in interviews because it
+              focuses on reasoning, trade-offs, and interpretation rather than only final metrics.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-challenges">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Challenges</p>
+          <h2>Project framing and limitations</h2>
+        </div>
+
+        <div class="detail-stack">
+          <article class="detail-card">
+            <h3>Scope limitations</h3>
+            <ul>
+              <li>The datasets are relatively small and educational in nature</li>
+              <li>This is not framed as a production benchmark</li>
+              <li>Results are specific to the datasets and preprocessing setup used</li>
+              <li>Stronger performance from one model does not generalize to all use cases</li>
+            </ul>
+          </article>
+
+          <article class="detail-card">
+            <h3>Key takeaway</h3>
+            <p>
+              In this comparison, Logistic Regression outperformed Random Forest on both
+              datasets, but the main lesson is not that one algorithm is universally better.
+              The lesson is that model choice should be grounded in the data, the problem,
+              and the evaluation context.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <h2>Let’s connect</h2>
+        <p>
+          Add your GitHub repo link, notebook link, and LinkedIn profile here.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/MatthewDmasa?tab=repositories">GitHub</a>
+        <a href="https://www.linkedin.com/in/matthew-delamasa/">LinkedIn</a>
+        <a href="mailto:matthew.delamasa@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
